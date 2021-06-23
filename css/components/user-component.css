@@ -52,3 +52,19 @@
     margin-bottom:10px;
     display:block
 }
+
+.user-component__subtitle-div{
+    display: flex;
+    align-items: center;
+
+}
+
+.user-component__warning{
+    margin-top:5px;
+    margin-left: 3px;
+    font-size:10px;
+    color: tomato;
+    padding:0px 3px;
+    border:1px solid tomato;
+    border-radius: 50%;
+}
