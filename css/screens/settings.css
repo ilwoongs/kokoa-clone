@@ -1,0 +1,30 @@
+.settings-list{
+}
+
+.settings-setting{
+    padding: 20px 0px;
+}
+
+.settings-setting__border{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.settings-setting i{
+    width:40px
+}
+
+
+
+.settings-setting span{
+    font-size:15px
+}
+
+.settings-setting__column{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.settings-setting__column > span{
+    color: var(--grey);
+}
