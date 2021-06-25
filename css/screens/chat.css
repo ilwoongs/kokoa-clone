@@ -1,0 +1,122 @@
+.chat-screen{
+    background-color: var(--green);
+    height:1000vh;
+}
+
+.chat-header{
+    position: fixed;
+    width:100%;
+    box-sizing: border-box;
+    top:0px
+}
+
+.main-chat{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat__timestamp{
+    color: white;
+    background-color: rgba(0,0,0,0.2);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.message-row{
+    width: 100%;
+    display: flex;
+    margin:20px 0px;
+}
+
+.message-row img{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+.message__author{
+    opacity: 0.5;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.message__bubble{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    border-top-left-radius: 0px;
+}
+
+.message__info{
+    display: flex;
+    align-items: flex-end
+}
+
+.message__time{
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+.message-row--my{
+    justify-content: flex-end;
+}
+
+.message-row--my .message__bubble{
+    background-color: yellow;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 10px;
+    order:1;
+}
+
+.message-row--my .message__time{
+    order:0;
+    margin-right: 5px;
+}
+
+.reply{
+    display: flex;
+    align-items: center;
+    position:fixed;
+    bottom:0;
+    padding: 5px 20px;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.reply__column:first-child{
+    width: 7%;
+}
+
+.reply__column:last-child{
+    width: 93%;
+    position: relative;
+}
+
+.reply__column:last-child input{
+    width: 94.8%;
+    padding: 10px;
+    border-radius: 22px;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.reply__column:last-child i{
+    position:absolute;
+    right:0px;
+    top:10px;
+}
+
+.reply__column:last-child > .fa-smile{
+    right:45px;
+}
+
+.reply__column:last-child > .fa-arrow-up{
+    border-radius: 50%;
+    background-color: var(--green);
+    padding: 10px;
+    top:1px;
+}
